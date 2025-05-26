@@ -1,0 +1,57 @@
+###Aliases
+alias cdw="cd /home/eto/workspace/"
+alias pwgen="pwgen 21 1 -y"
+alias vu=vi
+alias gitsuperclean='git reset --hard; git clean --force -d -x'
+alias ls=lsd
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+alias cat='bat -pp'
+alias less='bat --style=numbers --color=always'
+alias hist='history | fzf'
+alias grep='grep --color=auto'
+alias rg='rg --hidden'
+
+alias tf="terraform"
+alias a="ansible"
+alias ap="ansible-playbook"
+
+alias ga='git add'
+alias gp='git push'
+alias gc='git commit'
+alias gca='git commit -a'
+alias gco='git checkout'
+alias gcb='git copy-branch-name'
+alias gb='git branch'
+alias gs='git status'
+alias gac='git add -A && git commit -m'
+
+#vscode
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+
+
+### K8s Aliases
+alias k="kubectl"
+alias h="helm"
+alias kgp='kubectl get pods'
+alias kgs='kubectl get svc'
+alias kgd='kubectl get deploy'
+alias kge='kubectl get ep'
+alias kgn='kubectl get nodes'
+alias kga='kubectl get all'
+alias kga='kubectl get all'
+alias kgt='kubectl top po -A --sort-by=cpu'
+alias kgr='kubectl get rs'
+alias kdp='kubectl describe pods'
+alias kds='kubectl describe svc'
+alias kdd='kubectl describe deploy'
+alias kde='kubectl describe ep'
+alias kdn='kubectl describe nodes'
+alias kdr='kubectl describe rs'
+alias kev="k get events --sort-by='.metadata.creationTimestamp'"
+alias kaf="k apply -f"
+
+#eval "$(zoxide init zsh)"
+eval "$(fzf --bash)"
+
