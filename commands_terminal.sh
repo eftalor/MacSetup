@@ -7,8 +7,6 @@ defaults write com.apple.finder "ShowPathbar" -bool "true" && killall Finder
 # Show the status bar in the Finder
 defaults write com.apple.finder "ShowStatusBar" -bool "true" && killall Finder
 
-# Apply the settings
-/System/Library/PrivateFrameworks/SystemAdministration.framework/Resources/activateSettings -u
 # Show hidden files in the Finder
 defaults write com.apple.finder "AppleShowAllFiles" -bool "false" && killall Finder
 
