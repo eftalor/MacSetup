@@ -17,11 +17,28 @@ alias kev="k get events --sort-by='.metadata.creationTimestamp'"
 alias kaf="k apply -f"
 
 #git
-alias gitsuperclean='git reset --hard; git clean --force -d -x'
-alias ga='git add'
-alias gc='git commit -m"
+alias ga-'git add'
+alias gp='git push'
+alias gc='git commit'
+alias gca='git commit -a'
+alias gco='git checkout'
+alias gcb='git copy-branch-name'
+alias gb='git branch'
+alias gs='git status'
+alias gac='git add -A && git commit -m'
+
+#tools
+alias tf="terraform"
+alias a="ansible"
+alias ap="ansible-playbook"
 
 #various
-alias cdw="cd ~/workspace"
-alias pwgen="pwgen 21 1 -y"
-alias vu=vi
+alias ls=lsd
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+alias cat='bat -pp'
+alias less='bat --style=numbers --color=always'
+alias hist='history | fzf'
+alias grep='grep --color=auto'
+alias rg='rg --hidden'
